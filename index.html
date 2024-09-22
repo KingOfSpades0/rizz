@@ -1,1 +1,11 @@
-<h1><span>Rizz: </span<span id="rizz">0</span></h1>
+<h1><span>Rizz: <span id="rizz">0</span></h1>
+<button onclick="hi()">Said hi</button>
+<script>
+  var rizz = 0;
+  var x = document.getElementById("rizz");
+
+  function hi() {
+    rizz += 2;
+    x.innerHTML = rizz;
+  }
+</script>
