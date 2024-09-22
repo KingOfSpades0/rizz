@@ -1,11 +1,16 @@
 <h1><span>Rizz: <span id="rizz">0</span></h1>
-<button onclick="hi()">Said hi</button>
+<button onclick="hi()">Said hi (+2 rizz)</button>
+<button onclick="awkward1()">Akward 1 min conversation (-3 rizz)</button>
 <script>
   var rizz = 0;
   var x = document.getElementById("rizz");
-
+  setInterval(function(){
+    x.innerHTML = rizz;
+  }, 10);
   function hi() {
     rizz += 2;
-    x.innerHTML = rizz;
+  }
+  function awkward1() {
+    rizz -= 3;
   }
 </script>
