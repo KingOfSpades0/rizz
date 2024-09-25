@@ -1,1 +1,3 @@
 # rizz
+
+A game about gaining rizz, much like real life...
